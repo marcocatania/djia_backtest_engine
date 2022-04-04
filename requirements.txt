@@ -1,0 +1,6 @@
+requests
+yahoo_fin
+pandas
+pandas_market_calendars
+xlsxwriter
+numpy
