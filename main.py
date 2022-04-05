@@ -1,4 +1,5 @@
 import sys
+import os
 from datetime import datetime
 import numpy as np
 from db_helper import initialise_schema, query_table
@@ -12,6 +13,10 @@ from settings import API_KEY, STARTDATE_BACKTEST, \
 
 
 if __name__ == "__main__":
+    
+    abspath = os.path.abspath(__file__)
+    dname = os.path.dirname(abspath)
+    os.chdir(dname)
 
     today_date = datetime.now().date()
 
